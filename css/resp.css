@@ -1,0 +1,215 @@
+@media (max-width: 1040px) {
+    .container {
+        max-width: 940px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 5rem;
+        background: black;
+        align-items: center;
+        padding: 34px;
+        z-index: 123;
+        left: 0;
+    }
+    .main-menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 100;
+        top: 5rem;
+        left: -100%;
+        background: black;
+        width: 60%;
+        height: 100vh;
+        z-index: 1000;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        transition: .4s left;
+
+    }
+    
+    .main-menu li {
+        line-height: 40px;
+        transform: translateY(-3.2em);
+    }
+    .main-menu li a {
+        font-size: 20px;
+    }
+    #menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+    #menu-btn .linee {
+        width: 28px;
+        height: 4px;
+        background: #b4b4b4;
+        margin: 4px 0;
+        transition: .25s;
+        border-radius: 5px;
+    }
+    .cancel {
+        transition: 0;
+    }
+    #check:checked ~ label .cancel {
+        opacity: 0;
+    }
+    #check:checked ~ label .linee:nth-child(1) {
+        transform: rotate(-45deg) translate(-11px, 0);
+    }
+    #check:checked ~ label .linee:nth-child(3) {
+        transform: rotate(45deg) translate(-11px, 0);
+    }
+    #check:checked ~  .main-menu{
+        left: 0;
+    }
+    .showcase {
+        margin: 5rem 0;
+    }
+    .showcase-image {
+        display: none;
+    }
+    .showcase-content {
+        width: 100%;
+        padding: 2rem 2rem 12rem 2rem;
+    }
+    .showcase-content h1 {
+        width: 80%;
+        font-size: 45px;
+    }
+    .innovative {
+        display: block;
+    }
+    .innovative .info {
+        width: 100%;
+    }
+    .innovative img {
+        width: 20%;
+        margin: 12px 10px;
+    }
+    .technology-card {
+        width: 48%;
+    }
+    .features-contents {
+        display: flex;
+    }
+    .features-contents .feature-content:first-child {
+        display: none;
+    }
+    .feature-content {
+        width: 48%;
+    }
+    .product-card {
+        width: 44%;
+        margin-top: 2rem;
+    }
+    .customer-content {
+        width: 100%;
+    }
+
+    .faqs-items  {
+        display: block;
+    }
+    .faqs-content {
+        width: 100%;
+    }
+    .faqs-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .question {
+        width: 100%;
+    }
+    .faqs-image img {
+        width: 70%;
+    }
+    .app p {
+        width: 90%;
+    }
+    .contact-us {
+        display: block;
+    }
+    .contact-content {
+        width: 100%;
+        margin-bottom: 1.8rem;
+    }
+    
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .showcase-content h1 {
+        width: 100%;
+        font-size: 36px;
+    }
+    .innovative img {
+        width: 40%;
+        margin: 12px 10px;
+    }
+    .technology-card {
+        width: 100%;
+    }
+    .features-contents {
+        display: block;
+    }
+    .feature-content {
+        width: 100%;
+    }
+    .product-card {
+        width: 80%;
+        margin: 2rem auto;
+    }
+    .download h4 {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 24px;
+    }
+    .download h3 {
+        font-size: 12px;
+    }
+    .down-icon {
+        margin-right: .4rem;
+    }
+    .down-icon i {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 528px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .download h4 {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 12px;
+    }
+    .download h3 {
+        font-size: 8px;
+    }
+    .product-btns {
+        display: block;
+    }
+    .product-btns div {
+        margin: 18px 0;
+    }
+    .icons {
+        margin-left: 2rem;
+    }
+    .icons a  {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    .app {
+        width: 100%;
+    }
+}
